@@ -1,0 +1,54 @@
+.qtrade-avatar-cropper-component {
+	position: relative;
+	height: 135px;
+	font-size: 14px;
+
+	.label-area {
+		display: inline-block;
+		width: 91px;
+		text-align: right;
+
+		.star {
+			margin-right: 2px;
+			color: @dark-red;
+		}
+	}
+
+	.component-area {
+		position: absolute;
+		top: 0;
+		left: 101px;
+		text-align: center;
+
+		.avatar {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			cursor: pointer;
+
+			&.disabled {
+				cursor: default;
+			}
+		}
+
+		.round-area {
+			width: 100px;
+			height: 100px;
+			border-radius: 100%;
+			background: url("../../asset/image/qtrade/default-big.png") no-repeat;
+			cursor: pointer;
+			margin-left: 55px;
+			margin-bottom: 4px;
+
+			&.disabled {
+				cursor: default;
+			}
+		}
+
+		.description {
+			font-size: 12px;
+			text-align: left;
+			color: @dark-gray;
+		}
+	}
+}
