@@ -1,0 +1,183 @@
+.business-card-content {
+	.face-url {
+		position: relative;
+		padding-right: 10px;
+		cursor: pointer;
+
+		> img {
+			width: 18px;
+			height: 18px;
+			border-radius: 100%;
+			margin-bottom: -5px;
+		}
+
+		.comfirmed {
+			position: absolute;
+			top: 5px;
+			left: 10px;
+		}
+	}
+
+	.maker-details {
+		position: absolute;
+		top: 15px;
+		left: 20px;
+		z-index: 9;
+
+		.body-top {
+			display: -webkit-flex;
+			display: flex;
+			padding-top: 10px;
+
+			> .head-img {
+				position: relative;
+
+				> img {
+					width: 40px;
+					height: 40px;
+					border-radius: 100%;
+				}
+
+				.comfirmed {
+					background-size: 50px;
+					background-position: 0 5px;
+					position: absolute;
+					top: 23px;
+					left: 28px;
+					z-index: 9;
+				}
+			}
+
+			> .name-info {
+				padding-left: 10px;
+
+				> div:nth-child(1) {
+					height: 20px;
+					line-height: 20px;
+				}
+
+				> div:nth-child(2) {
+					height: 20px;
+					line-height: 20px;
+					max-width: 300px;
+					text-align: left;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+
+					> div {
+						display: none;
+						background-color: #FFFFFF;
+						border: 1px solid #DDDDDD;
+						border-radius: 2px;
+						padding: 5px 10px;
+						margin-left: 5px;
+						margin-right: 5px;
+						position: absolute;
+						z-index: 9;
+						text-align: left;
+						white-space: initial;
+					}
+				}
+
+				> div:nth-child(2):hover {
+					> div {
+						display: block;
+					}
+				}
+			}
+		}
+
+		.body-bottom {
+			display: -webkit-flex;
+			display: flex;
+
+			> li {
+				margin-right: 10px;
+
+				> div {
+					display: -webkit-flex;
+					display: flex;
+					position: relative;
+
+					> span:nth-child(2) {
+						min-width: 10px;
+						max-width: 100px;
+						text-align: center;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+
+						> div {
+							min-width: 25px;
+							display: none;
+							background-color: #FFFFFF;
+							border: 1px solid #DDDDDD;
+							border-radius: 2px;
+							padding-left: 5px;
+							padding-right: 5px;
+							position: absolute;
+							top: 15px;
+							left: 25px;
+							z-index: 9;
+						}
+					}
+
+					> span:nth-child(2):hover {
+						> div {
+							display: block;
+						}
+					}
+				}
+			}
+
+			> li:nth-child(1) {
+				> div:nth-child(1) {
+					.icon-1 {
+						background: transparent url("../../asset/image/qtrade/sprites_01.png") no-repeat -27px -563px;
+						padding: 5px 10px;
+					}
+				}
+
+				> div:nth-child(2) {
+					.icon-4 {
+						background: transparent url("../../asset/image/qtrade/sprites_01.png") no-repeat 2px -563px;
+						padding: 5px 10px;
+					}
+				}
+			}
+
+			> li:nth-child(2) {
+				> div:nth-child(1) {
+					.icon-2 {
+						background: transparent url("../../asset/image/qtrade/sprites_01.png") no-repeat 6px -593px;
+						padding: 5px 10px;
+					}
+				}
+
+				> div:nth-child(2) {
+					.icon-5 {
+						background: transparent url("../../asset/image/qtrade/sprites_01.png") no-repeat 4px -533px;
+						padding: 5px 10px;
+					}
+				}
+			}
+
+			> li:nth-child(3) {
+				> div:nth-child(1) {
+					.icon-3 {
+						background: transparent url("../../asset/image/qtrade/sprites_01.png") no-repeat -27px -533px;
+						padding: 5px 10px;
+					}
+				}
+
+				> div:nth-child(2) {
+					.icon-6 {
+						background: transparent url("../../asset/image/qtrade/sprites_01.png") no-repeat -24px -593px;
+						padding: 5px 10px;
+					}
+				}
+			}
+		}
+	}
+}

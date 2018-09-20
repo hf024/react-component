@@ -1,0 +1,122 @@
+.prompt-container {
+	z-index: 999;
+	position: absolute;
+	top: 135px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 120px;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+
+	&.warm {
+		border-radius: 4px;
+		background-color: rgba(255, 251, 230, 1);
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+		border: 1px solid rgba(255, 229, 143, 1);
+	}
+
+	span {
+		line-height: 32px;
+	}
+
+	.icon-tag {
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+
+	.icon-tag::before {
+		font-size: 16px;
+	}
+}
+
+.im-prompt-container {
+	position: absolute;
+	top: 280px;
+	left: 50%;
+	z-index: @im-operation-board;
+	padding: 12px 20px;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+
+	.icon {
+		display: inline-block;
+		background: transparent url(../../asset/image/qtrade/sprites_01.png) no-repeat 0 -389px;
+		width: 18px;
+		height: 18px;
+		position: relative;
+		top: 1px;
+		margin-right: 8px;
+	}
+
+	.error {
+		background-position: 0 -419px;
+		width: 16px;
+		height: 16px;
+	}
+
+	.prompt-content {
+		position: relative;
+		top: -2px;
+	}
+}
+// 弹出提示的动画效果，有些许兼容问题，暂时不用
+// .prompt-fade-in {
+// 	-webkit-animation-duration: 0.5s;
+// 	-webkit-animation-name: prompt-fadein;
+// 	-moz-animation-name: prompt-fadein;
+// 	-ms-animation-name: prompt-fadein;
+// 	animation-name: prompt-fadein;
+// }
+
+// @-webkit-keyframes prompt-fadein {
+// 	0% {
+// 		opacity: 0;
+// 		height: 0;
+// 	}
+
+// 	100% {
+// 		opacity: 1;
+// 		height: 0;
+// 	}
+// }
+
+// @-moz-keyframes prompt-fadein {
+// 	0% {
+// 		opacity: 0;
+// 		height: 0;
+// 	}
+
+// 	100% {
+// 		opacity: 1;
+// 		height: 0;
+// 	}
+// }
+
+// @-ms-keyframes prompt-fadein {
+// 	0% {
+// 		opacity: 0;
+// 		height: 0;
+// 	}
+
+// 	100% {
+// 		opacity: 1;
+// 		height: 0;
+// 	}
+// }
+
+// @keyframes prompt-fadein {
+// 	0% {
+// 		opacity: 0;
+// 		height: 0;
+// 	}
+
+// 	100% {
+// 		opacity: 1;
+// 		height: 0;
+// 	}
+// }

@@ -1,0 +1,31 @@
+.file-uploader-component {
+	input[type='file'] {
+		display: none;
+	}
+
+	label {
+		display: inline-block;
+
+		> span {
+			display: inline-block;
+			max-width: 220px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		.upload-file-button {
+			width: 80px;
+			cursor: pointer;
+
+			.icon {
+				margin-right: 4px;
+			}
+
+			.text {
+				color: @lake-blue;
+				font-size: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,121 @@
+[
+	{
+		"title": "机构管理后台相关",
+		"children": [
+			{
+				"title": "机构管理员",
+				"children": [],
+				"contents": [
+					{
+						"question": "如何修改QTrade交易员管理系统的登录密码？",
+						"answer": [
+							{
+								"type": "text",
+								"value": "在右上角”机构管理员“下”拉菜单中→点击“修改密码”"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题2.png"
+							}
+						]
+					},
+					{
+						"question": "如何修改QTrade交易员管理系统的登录密码？",
+						"answer": [
+							{
+								"type": "text",
+								"value": "在右上角下拉菜单中→点击“修改密码”"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题2.png"
+							}
+						]
+					},
+					{
+						"question": "如何导出员工信息？",
+						"answer": [
+							{
+								"type": "text",
+								"value": "在“员工管理”面板中→点击右侧的“导出”按钮，即可下载。"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题3.png"
+							}
+						]
+					},
+					{
+						"question": "如何查看员工与员工间的聊天记录？",
+						"answer": [
+							{
+								"type": "text",
+								"value": "在“聊天记录查询”面板中→选择左侧“员工列表”中想要查看的员工→在右侧“消息列表”中可查看聊天记录→“消息列表”顶部可以选择对应的与话人"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题4.png"
+							}
+						]
+					},
+					{
+						"question": "如何导出员工聊天记录？",
+						"answer": [
+							{
+								"type": "text",
+								"value": "在“聊天记录查询”面板中→选择想要导出的员工→点击右侧“消息列表”栏的“导出”按钮→可选择导出当前对象的聊天记录，也可以导出全部聊天记录。"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题5.png"
+							}
+						]
+					},
+					{
+						"question": "如何导出交易行为记录？",
+						"answer": [
+							{
+								"type": "text",
+								"value": "在“交易行为查询”面板中→选择想要导出的员工→在右侧“消息列表”中→点击“导出”按钮，即可导出记录。"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题6.png"
+							}
+						]
+					},
+					{
+						"question": "如何设置敏感词告警？",
+						"answer": [
+							{
+								"type": "text",
+								"value": "在“敏感词告警”面板中→点击“管理敏感词”蓝色按钮→可“删除”或 “新增敏感词”"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题7（1）.png"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题7（2）.png"
+							}
+						]
+					},
+					{
+						"question": "如何导出员工的敏感词记录？",
+						"answer": [
+							{
+								"type": "text",
+								"value": "在“敏感词告警”面板中→左侧“员工”处输入想要导出的员工姓名→点击“查询”→之后点击右侧“导出”按钮，即可导出记录。注：不输入员工姓名则为导出全部记录。"
+							},
+							{
+								"type": "image",
+								"value": "/image/question/机构管理后台相关-问题8.png"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

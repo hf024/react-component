@@ -1,0 +1,183 @@
+@popup-container: 999;
+@popup-header: 1000;
+
+.popup-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: @popup-container;
+
+	.overlay {
+		background-color: black;
+		opacity: 0.3;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+
+		&.transparent {
+			opacity: 0;
+		}
+	}
+
+	.popup {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: @popup-container;
+		padding: 0;
+		border-radius: 4px;
+		background-color: white;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+		.popup-header {
+			z-index: @popup-header;
+			overflow: hidden;
+			padding: 8px 20px;
+			background-color: #F2F6FD;
+			color: #333333;
+			border-radius: 4px 4px 0 0;
+			border-bottom: 1px solid #E6E6E6;
+			position: relative;
+			height: 36px;
+
+			&.dragable {
+				cursor: all-scroll;
+			}
+
+			&.center-header {
+				text-align: center;
+			}
+
+			&.header-border-bottom {
+				border-bottom: 1px solid #DDDDDD;
+			}
+
+			.header-title {
+				font-size: 14px;
+			}
+
+			.close {
+				width: 34px;
+				height: 24px;
+				border-radius: 0 4px 0 0;
+				position: absolute;
+				top: 0;
+				right: 0;
+				text-align: center;
+				font-size: 21px;
+				font-weight: 200;
+				line-height: 21px;
+				color: #666666;
+				cursor: pointer;
+			}
+
+			.close:hover {
+				color: white;
+				background-color: red;
+			}
+		}
+
+		&.vertical-top-170-pixel {
+			top: 170px;
+		}
+
+		&.vertical-top-8-persent {
+			top: 8%;
+		}
+	}
+}
+
+.alert-info {
+	width: 520px;
+	padding: 20px;
+
+	.tips-icon {
+		float: left;
+		width: 44px;
+		min-height: 70px;
+		font-size: 44px;
+		margin-right: 16px;
+	}
+
+	.tips-body {
+		.tips-title {
+			font-size: 16px;
+			line-height: 20px;
+			margin: 10px 0 14px 0;
+			text-align: left;
+		}
+
+		.tips {
+			color: #999999;
+			font-size: 14px;
+			margin-bottom: 30px;
+
+			&.no-title {
+				color: #333333;
+			}
+		}
+
+		p {
+			.qq-style {
+				background-color: #2196F3;
+				text-decoration: none;
+				color: #FFFFFF;
+				border-radius: 2px;
+				padding: 8px;
+				font-size: 12px;
+				cursor: pointer;
+
+				.arouse {
+					background: url('../../asset/image/sprites_01.png') no-repeat;
+					background-position: 0 -712px;
+					padding: 10px;
+				}
+			}
+
+			.state-style {
+				margin-top: 6px;
+				display: inline-block;
+			}
+		}
+
+		.text {
+			font-size: 14px;
+			color: #333333;
+		}
+
+		.button-group {
+			float: right;
+
+			.item-button {
+				padding: 0 18px;
+				border: none;
+				outline: none;
+				text-align: center;
+				line-height: 32px;
+				font-size: 14px;
+				color: #FFFFFF;
+				border-radius: 2px;
+				border-color: #1B6D85;
+				background-color: #2196F3;
+				cursor: pointer;
+			}
+
+			.cancel {
+				background: #FFFFFF;
+				color: #666666;
+				border: 1px solid #E6E6E6;
+				margin-right: 10px;
+			}
+
+			.cancel:hover {
+				background-color: #F1F1F1;
+			}
+
+			.confirm:hover {
+				background-color: #1A7DD4;
+			}
+		}
+	}
+}

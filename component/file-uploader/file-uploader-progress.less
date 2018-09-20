@@ -1,0 +1,50 @@
+.file-uploader-progress-component {
+	.content-container {
+		position: relative;
+
+		.file-uploader-component {
+			display: inline;
+			line-height: 11px;
+		}
+
+		.md5-checking {
+			margin: 0 10px;
+		}
+
+		.progress-bar-container {
+			display: inline-block;
+			width: 100px;
+			border: 1px solid #DAEBFE;
+			margin-left: 10px;
+
+			.progress-bar {
+				background-color: #BEDDFF;
+			}
+
+			.transform {
+				-webkit-transition: width 0.6s ease;
+				-moz-transition: width 0.6s ease;
+				-o-transition: width 0.6s ease;
+				-ms-transition: width 0.6s ease;
+				transition: width 0.6s ease;
+			}
+		}
+
+		.file-name-ellipsis {
+			display: inline-block;
+			max-width: 325px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			vertical-align: top;
+		}
+
+		.clickable-label {
+			display: inline-block;
+			margin-left: 8px;
+			color: @lake-blue;
+			cursor: pointer;
+			vertical-align: top;
+		}
+	}
+}

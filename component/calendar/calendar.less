@@ -1,0 +1,151 @@
+.calendar-component {
+	position: relative;
+
+	.date-input {
+		width: 95px;
+		padding-right: 20px;
+
+		&.has-time {
+			width: 148px;
+			background-position-x: 128px;
+		}
+	}
+
+	.calender-graph {
+		display: inline-block;
+		position: absolute;
+		right: 9px;
+		top: 9px;
+		cursor: pointer;
+	}
+
+	.date-panel-container {
+		.date-panel {
+			z-index: 99;
+			position: absolute;
+			width: 260px;
+			background-color: white;
+			border: 1px solid #C8CBCC;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+			border-radius: 3px;
+
+			.year-month-header {
+				border-bottom: 1px solid #CECECE;
+
+				.inline-block {
+					display: inline-block;
+					width: 50%;
+
+					.number-selector {
+						line-height: 34px;
+						text-align: center;
+						font-weight: bold;
+						padding: 0 10px;
+
+						.arrow {
+							font-size: 36px;
+							font-weight: 100;
+							cursor: pointer;
+							width: 24px;
+							height: 34px;
+							line-height: 24px;
+							color: #999999;
+						}
+					}
+				}
+			}
+
+			.day-header {
+				padding: 0 5px;
+
+				.day-label {
+					display: inline-block;
+					line-height: 22px;
+					margin-top: 5px;
+					text-align: center;
+					color: #999999;
+				}
+			}
+
+			.time-selector {
+				background-color: white;
+				border-top: 1px solid #CECECE;
+
+				.togglers {
+					margin-top: 8px;
+
+					.label {
+						margin: 0 5px;
+						display: inline-block;
+					}
+
+					.group {
+						margin: 3px 0;
+						border: 1px solid #C8CBCC;
+						display: inline-block;
+
+						.digit-type {
+							display: inline-block;
+							padding: 0 5px;
+							cursor: pointer;
+
+							&.highlight {
+								font-weight: bold;
+							}
+						}
+					}
+				}
+
+				.digit-panel {
+					position: absolute;
+					background-color: white;
+					top: 26px;
+					height: 185px;
+
+					.digit-header {
+						.type-name {
+							margin: 5px;
+							text-align: center;
+						}
+					}
+				}
+			}
+
+			.buttons {
+				float: right;
+				margin: 8px 5px;
+
+				.button {
+					border-top: 1px solid #C8CBCC;
+					border-bottom: 1px solid #C8CBCC;
+					border-right: 1px solid #C8CBCC;
+					padding: 4px 8px;
+					display: inline-block;
+					cursor: pointer;
+
+					&:hover {
+						background-color: #C4DEF3;
+					}
+
+					&.highlight {
+						background-color: @lake-blue;
+						color: white;
+					}
+
+					&:first-child {
+						border-left: 1px solid #C8CBCC;
+						border-radius: 2px;
+						border-top-right-radius: 0;
+						border-bottom-right-radius: 0;
+					}
+
+					&:last-child {
+						border-radius: 2px;
+						border-top-left-radius: 0;
+						border-bottom-left-radius: 0;
+					}
+				}
+			}
+		}
+	}
+}

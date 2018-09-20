@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.btn {
+	display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 12px;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    background-color: #2196F3;
+    outline: none;
+}
+@import "../react-component/component/range-slider/range-slider.less";
+@import "../react-component/component/cropper/avatar-cropper.less";
+@import "../react-component/component/cropper/base-cropper.less";
+@import "../react-component/component/popup/popup.less";
+@import "../react-component/component/audio/chat-audio.less";
+@import "./app/react-component-demo.less";
+@import './node_modules/cropperjs/dist/cropper.css';

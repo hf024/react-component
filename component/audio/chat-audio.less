@@ -1,0 +1,51 @@
+
+.audio-component {
+	margin: 0;
+	color: #999999;
+	height: 34px;
+	max-width: 200px;
+	min-width: 80px;
+	background-color: #1FB4F4;
+	border: 1px solid #1FB4F4;
+	border-radius: 8px;
+	position: relative;
+
+	/* 右侧样式 */
+	.image {
+		position: absolute;
+		width: 30px;
+		height: 34px;
+		background: url('../../asset/image/agency/chat-audio-64-static.png') no-repeat;
+		background-position: 0 7px;
+		background-size: 16px 16px;
+
+		&.is-playing {
+			background: url('../../asset/image/agency/chat-audio-64.gif') no-repeat;
+			background-position: 0 7px;
+			background-size: 16px 16px;
+		}
+	}
+
+	.audio-info {
+		display: inline-block;
+		width: 100%;
+		color: #FFFFFF;
+		height: 34px;
+		line-height: 34px;
+		cursor: pointer;
+
+		.image {
+			left: 5px;
+		}
+
+		.duration {
+			position: relative;
+			left: 35px;
+		}
+	}
+
+	&:hover {
+		background-color: rgb(57, 176, 226);
+		border: 1px solid rgb(57, 176, 226);
+	}
+}
